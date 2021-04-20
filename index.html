@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Alves Mendes">
+    <meta name="description" content="Gere um QRCode grátis sem expiração nem limite de Scan!">
+    <link rel="shortcut icon" href="public/images/qrcode.svg" type="image/x-icon">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/aos/aos.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Gerador QRCode Gratuito</title>
+</head>
+
+<body>
+    <main>
+        <section class="section-01">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                            <h1 class="display-4">Gerador <span>QRCode</span> Gratuito</h1>
+                            <p class="lead"><strong>QRCode</strong> gratuito sem expiração nem limite de scan!</p>
+                            <p class="lead">By: <a href="https://estilodev.com.br" target="_blank"><strong>estilodev.com.br</strong></a></p>
+                            <hr class="my-2">
+                            <article class="perfil">
+                                <img src="https://avatars.githubusercontent.com/u/36117649">
+                                <div class="content">
+                                    <p class="lead"><strong>Victor Alves Mendes</strong></p>
+                                    <p class="lead github">
+                                        <a target="_blank" href="https://github.com/devvime"><img src="public/images/github.svg"></a>
+                                        <a target="_blank" href="https://www.instagram.com/viimee"><img src="public/images/instagram.svg"></a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-02">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 offset-xl-2 col-01">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="url">
+                                <p><strong>URL</strong>:</p>
+                                <input type="text" class="form-control" placeholder="https://seulink.com.br" id="url">
+                                <button class="btn btn-outline-info" id="generate">GERAR QRCode</button>
+                                <a id="download-qrcode" download="QRCode.png"><button class="btn btn-success" disabled>BAIXAR QRCode</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-02">
+                        <div class="box" id="your-qrcode" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="url" id="ready">
+                                <img src="public/images/qrcode.svg" class="preview-qrcode">
+                            </div>
+                            <div class="loading"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/qrcode/qrcode.min.js"></script>
+    <script src="vendor/aos/aos.min.js"></script>
+    <script src="vendor/sweetalert/sweetalert.js"></script>
+    <script src="src/index.js" type="module"></script>
+</body>
+
+</html>

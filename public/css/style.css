@@ -1,0 +1,191 @@
+body {
+  background-color: #0d1117;
+}
+
+body h1,
+body p,
+body a,
+body hr {
+  color: #9da6b1;
+}
+
+body span {
+  color: #ff5689;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+body span:hover {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+main .box {
+  padding: 30px;
+  background-color: #1c2430;
+  border-radius: 15px;
+  margin-top: 15px;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  main .box {
+    max-width: 856px;
+  }
+}
+
+@media (max-width: 1600px) {
+  main .container {
+    max-width: none !important;
+  }
+}
+
+main .section-01 {
+  padding-top: 15px;
+}
+
+main .section-01 .box a {
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+main .section-01 .box a:hover {
+  color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+main .section-01 .box p {
+  margin-bottom: 0.3rem;
+}
+
+main .section-01 .box .perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+main .section-01 .box .perfil img {
+  margin-right: 10px;
+  border-radius: 100%;
+  width: 65px;
+}
+
+main .section-01 .box .perfil p {
+  margin: auto;
+}
+
+main .section-01 .box .perfil p.github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .section-01 .box .perfil p.github a img {
+  width: 25px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+main .section-01 .box .perfil p.github a img:hover {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: scale(1.1) translateY(-4px);
+          transform: scale(1.1) translateY(-4px);
+}
+
+main .section-02 {
+  padding-top: 15px;
+}
+
+main .section-02 .col-01 {
+  padding-right: 0;
+}
+
+@media (max-width: 1200px) {
+  main .section-02 .col-01 {
+    margin-bottom: 15px;
+    padding-right: 15px;
+  }
+}
+
+main .section-02 .col-02 {
+  padding-left: 15px;
+}
+
+main .section-02 .box#your-qrcode {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section-02 .box#your-qrcode img {
+  width: 250px;
+}
+
+main .section-02 .box .url button {
+  margin-top: 20px;
+}
+
+main .section-02 .box .url button:disabled {
+  opacity: 0.3;
+}
+
+main .section-02 .box .preview-qrcode {
+  opacity: 0.3;
+}
+
+main .loading {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 100%;
+  border: 5px solid rgba(255, 255, 255, 0.7);
+  border-left-color: #0dcaf0;
+  border-top-color: #0dcaf0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-animation: load 5s infinite alternate;
+          animation: load 5s infinite alternate;
+  display: none;
+}
+
+@-webkit-keyframes load {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1920deg);
+            transform: rotate(1920deg);
+  }
+}
+
+@keyframes load {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1920deg);
+            transform: rotate(1920deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
