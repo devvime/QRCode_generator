@@ -15,4 +15,4 @@ Gerador QRCode simples com Javascript, sem expiração nem limite de Scans.
 
 ### PS:
 
-_Necessário rodar o projeto dentro de um servidor_
+_Necessário rodar o projeto dentro de um servidor de desenvolvimento_
